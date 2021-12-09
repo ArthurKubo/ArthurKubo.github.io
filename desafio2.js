@@ -162,6 +162,7 @@ price.addEventListener('click', function(){
     'eventLabel': 'download:now',
     'value':'100'
   });
+
   console.log("colocando dados de valor pro dataLayer");
-})
+});
 /* FIM DA MÉTRICA DE PREÇO*/
