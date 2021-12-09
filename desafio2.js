@@ -159,7 +159,7 @@ price.addEventListener('click', funcion(){
     'event':'conversion:event',
     'eventCategory':'android:body',
     'eventAction':'click:body:menu',
-    'eventLabel': 'download:now'
+    'eventLabel': 'download:now',
     'value':'100'
   });
   console.log("colocando dados de valor pro dataLayer");
