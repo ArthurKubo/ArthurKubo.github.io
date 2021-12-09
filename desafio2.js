@@ -110,7 +110,8 @@ play.addEventListener('click', function() {
     'event': 'generic:event',
     'eventCategory': 'android:header',
     'eventAction': 'click:header:menu',
-    'eventLabel': 'play'
+    'eventLabel': 'play',
+    'value': '100'
   });
 
   console.log("colocando dados de navigation>play pro dataLayer");
@@ -149,21 +150,3 @@ mais.addEventListener('click', function(){
   console.log("colocando dados do botão mais pro dataLayer");
 })
 /* FIM DO BOTÃO [...] */
-
-/* TESTE DE MÉTRICA DE PREÇO*/
-var price = document.querySelector(".mdl-navigation__link mdl-typography--text-uppercase")[6];
-console.log(price);
-price.addEventListener('click', function(){
-
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    'event':'conversion:event',
-    'eventCategory':'android:body',
-    'eventAction':'click:body:menu',
-    'eventLabel': 'download:now',
-    'value':'100'
-  });
-
-  console.log("colocando dados de valor pro dataLayer");
-});
-/* FIM DA MÉTRICA DE PREÇO*/
