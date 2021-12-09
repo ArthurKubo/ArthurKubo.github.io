@@ -149,3 +149,19 @@ mais.addEventListener('click', function(){
   console.log("colocando dados do botão mais pro dataLayer");
 })
 /* FIM DO BOTÃO [...] */
+
+/* TESTE DE MÉTRICA DE PREÇO*/
+var price = document.querySelector(".android-link mdl-button mdl-js-button mdl-typography--text-uppercase");
+price.addEventListener('click', funcion(){
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event':'conversion:event'
+    'eventCategory':'android:body'
+    'eventAction':'click:body:menu'
+    'eventLabel': 'download:now'
+    'value':'100'
+  });
+  console.log("colocando dados de valor pro dataLayer");
+})
+/* FIM DA MÉTRICA DE PREÇO*/
