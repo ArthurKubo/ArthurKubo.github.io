@@ -152,6 +152,7 @@ mais.addEventListener('click', function(){
 
 /* TESTE DE MÉTRICA DE PREÇO*/
 var price = document.querySelector(".android-link mdl-button mdl-js-button mdl-typography--text-uppercase");
+console.log(price);
 price.addEventListener('click', function(){
 
   window.dataLayer = window.dataLayer || [];
