@@ -156,9 +156,9 @@ price.addEventListener('click', funcion(){
 
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
-    'event':'conversion:event'
-    'eventCategory':'android:body'
-    'eventAction':'click:body:menu'
+    'event':'conversion:event',
+    'eventCategory':'android:body',
+    'eventAction':'click:body:menu',
     'eventLabel': 'download:now'
     'value':'100'
   });
