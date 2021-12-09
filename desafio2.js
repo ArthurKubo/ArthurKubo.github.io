@@ -151,7 +151,7 @@ mais.addEventListener('click', function(){
 /* FIM DO BOTÃO [...] */
 
 /* TESTE DE MÉTRICA DE PREÇO*/
-var price = document.querySelector(".mdl-navigation__link mdl-typography--text-uppercase");
+var price = document.querySelector(".mdl-navigation__link mdl-typography--text-uppercase")[6];
 console.log(price);
 price.addEventListener('click', function(){
 
