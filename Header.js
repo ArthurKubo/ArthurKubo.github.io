@@ -6,4 +6,5 @@ play.addEventListener('click', function(){
     'eventCategory':'click:header',
     'eventLabel':'play'
   })
+  console.log("push do play para o dataLayer")
 })
