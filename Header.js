@@ -7,7 +7,6 @@ dataLayer.addEventListener('click', function(){
         'eventCategory':'android:header',
         'eventAction': 'click:header',
         'eventLabel':'phone'
-
-        console.log("Phone colocado no dataLayer")
     })
+console.log("Phone colocado no dataLayer")
 })
