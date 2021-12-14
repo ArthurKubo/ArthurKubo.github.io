@@ -1,3 +1,3 @@
 //snippet for custom dimension
-var dimensionValue = 'SOME_DIMENSION_VALUE';
-ga('set', 'dimension1', dimensionValue);
+var eventLabel = 'SOME_DIMENSION_VALUE';
+ga('set', 'dimension1', eventLabel);

@@ -26,6 +26,16 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-214407158-1');
+
+  // Configures custom dimension<Index> to use the custom parameter
+  // 'dimension_name' for 'GA_MEASUREMENT_ID', where <Index> is a number
+  // representing the index of the custom dimension.
+  gtag('config', 'UA-214407158-1', {
+    'custom_map': {'dimension1': 'eventLabel'}
+  });
+
+  // Sends the custom dimension to Google Analytics.
+  gtag('event', 'eventLabel', {'eventLabel': eventLabel});
 </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
