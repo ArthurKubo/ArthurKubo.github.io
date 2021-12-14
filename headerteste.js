@@ -66,7 +66,7 @@ var one = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-
 one.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event';'general:event',
+    'event':'general:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel': 'one'
