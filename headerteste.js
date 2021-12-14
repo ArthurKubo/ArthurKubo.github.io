@@ -20,7 +20,7 @@ tablets.addEventListener('click', function(){
   window.dataLayer.push({
     'event':'general:event',
     'eventCategory': 'android:header',
-    'eventActioin':'click:img',
+    'eventAction':'click:img',
     'eventLabel':'tablets'
   });
   console.log("push do 'tablets' para o dataLayer");
