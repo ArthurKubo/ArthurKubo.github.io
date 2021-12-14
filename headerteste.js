@@ -83,4 +83,5 @@ play.addEventListener('click', function(){
     'eventAction':'click:img',
     'eventLabel':'play'
   });
+  console.log("push do 'play' para o dataLayer");
 });
