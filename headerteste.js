@@ -1,5 +1,6 @@
 var play = document.querySelectorAll(".mdl-navigation__link mdl-typography--text-uppercase")[6];
-play.addEventListener('click', function(){
+console.log(play);
+play.addEventListener('click', function() {
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
     'event':'general:event',
