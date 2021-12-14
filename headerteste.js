@@ -49,4 +49,38 @@ tv.addEventListener('click', function(){
   });
   console.log("push do 'tv' para o dataLayer");
 });
-
+//AUTO
+var auto = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[4];
+auto.addEventListener('click', function(){
+  window.dataLayer= window.dataLayer || [];
+  window.dataLayer.push({
+    'event':'general:event',
+    'eventCategory':'android:header',
+    'eventAction':'click:img',
+    'eventLabel':'auto'
+  });
+  console.log("push do 'auto' para o dataLayer");
+})
+//ONE
+var one = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[5];
+one.addEventListener('click', function(){
+  window.dataLayer= window.dataLayer || [];
+  window.dataLayer.push({
+    'event';'general:event',
+    'eventCategory':'android:header',
+    'eventAction':'click:img',
+    'eventLabel': 'one'
+  });
+  console.log("push do 'one' para o dataLayer");
+});
+//PLAY
+var play = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[6];
+play.addEventListener('click', function(){
+  window.dataLayer= window.dataLayer|| [];
+  window.dataLayer.push({
+    'event':'general:event',
+    'eventCategory':'android:header',
+    'eventAction':'click:img',
+    'eventLabel':'play'
+  });
+});
