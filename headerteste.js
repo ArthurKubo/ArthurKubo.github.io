@@ -3,15 +3,15 @@
 /* Push do botão Phone*/ 
 var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[0];
 
-play.addEventListener('click', function() {
+phone.addEventListener('click', function() {
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
     'event':'general:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
-    'eventLabel':'play'
+    'eventLabel':'phones'
   });
-  console.log("push do 'play' para o dataLayer");
+  console.log("push do 'phone' para o dataLayer");
 });
 /*Push do botão Tablets*/
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
