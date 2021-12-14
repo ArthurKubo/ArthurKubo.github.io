@@ -4,8 +4,8 @@ play.addEventListener('click', function(){
   window.dataLayer.push({
     'event':'general:event',
     'eventCategory':'android:header',
-    'eventAction':'click:img'
+    'eventAction':'click:img',
     'eventLabel':'play'
   });
-  console.log("push do play para o dataLayer")
+  console.log("push do play para o dataLayer");
 });
