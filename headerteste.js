@@ -1,4 +1,5 @@
 var play = document.querySelectorAll(".mdl-navigation__link mdl-typography--text-uppercase")[6];
+console.log(play)
 console.log("o console leu até essa parte");
 play.addEventListener('click', function() {
   window.dataLayer= window.dataLayer || [];
