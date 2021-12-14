@@ -1,4 +1,4 @@
-var play = document.querySelectorAll(".mdl-navigation__link mdl-typography--text-uppercase")[6];
+var play = document.querySelectorAll(".mdl-navigation__link mdl-typography--text-uppercase")[0];
 console.log(play);
 play.addEventListener('click', function() {
   window.dataLayer= window.dataLayer || [];
