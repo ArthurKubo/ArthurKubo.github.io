@@ -26,9 +26,12 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-214407158-1');
-//snippet
-  var eventLabel = 'SOME_DIMENSION_VALUE';
-  ga('set', 'dimension1', eventLabel);
+// Maps 'dimension1' to 'eventLabel'.
+  gtag('config', 'UA-214407158-1', {
+  'custom_map': {'dimension1': 'eventLabel'}
+});
+// Sends an event that passes 'eventLabel' as a parameter.
+gtag('event', 'eventLabel_dimension');
 </script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
