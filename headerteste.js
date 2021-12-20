@@ -86,7 +86,7 @@ play.addEventListener('click', function(){
   console.log("push do 'play' para o dataLayer");
 });
 
-var search = document.querySelector(".mdl-button mdl-js-button mdl-button--icon");
+var search = document.querySelector(".mdl-button.mdl-js-button.mdl-button--icon");
 search.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
