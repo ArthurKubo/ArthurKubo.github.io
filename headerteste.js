@@ -85,3 +85,15 @@ play.addEventListener('click', function(){
   });
   console.log("push do 'play' para o dataLayer");
 });
+
+var search = document.querySelector(".mdl-button mdl-js-button mdl-button--icon");
+search.addEventListener('click', function(){
+  window.dataLayer= window.dataLayer || [];
+  window.dataLayer.push({
+    'event':'general:event',
+    'eventCategory':'android:header',
+    'eventAction':'click:img',
+    'eventLabel':'search'
+  });
+  console.log("push do botão 'search' para o dataLayer");
+});
