@@ -6,7 +6,7 @@ var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--tex
 phone.addEventListener('click', function() {
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel':'phones'
@@ -18,7 +18,7 @@ var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--t
 tablets.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory': 'android:header',
     'eventAction':'click:img',
     'eventLabel':'tablets'
@@ -30,7 +30,7 @@ var wear = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text
 wear.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction': 'click:img',
     'eventLabel':'wear'
@@ -42,7 +42,7 @@ var tv = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-u
 tv.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory': 'android:header',
     'eventAction':'click:img',
     'eventLabel':'tv'    
@@ -54,7 +54,7 @@ var auto = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text
 auto.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel':'auto'
@@ -66,7 +66,7 @@ var one = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-
 one.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel': 'one'
@@ -78,7 +78,7 @@ var play = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text
 play.addEventListener('click', function(){
   window.dataLayer= window.dataLayer|| [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel':'play'
@@ -90,7 +90,7 @@ var search = document.querySelector(".mdl-button.mdl-js-button.mdl-button--icon"
 search.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel':'search'
@@ -102,7 +102,7 @@ var more = document.querySelector("#more-button");
 more.addEventListener('click', function(){
   window.dataLayer= window.dataLayer || [];
   window.dataLayer.push({
-    'event':'general:event',
+    'event':'generic:event',
     'eventCategory':'android:header',
     'eventAction':'click:img',
     'eventLabel':'more'
