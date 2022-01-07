@@ -1,4 +1,4 @@
-var phone = document.querySelectorAll("mdl-navigation__link mdl-typography--text-uppercase")[0];
+var phone = document.querySelectorAll("mdl-navigation__link.mdl-typography--text-uppercase")[0];
 phone.addEventListener('click', function(){
     window.dataLayer= window.dataLayer || [];
     window.dataLayer.push({
