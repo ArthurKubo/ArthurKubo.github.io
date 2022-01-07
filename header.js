@@ -1,4 +1,4 @@
-var phone = document.querySelectorAll(".android-navigation mdl-navigation")[0];
+var phone = document.querySelectorAll(".android-navigation.mdl-navigation")[0];
 phone.addEventListener('click', function(){
     window.dataLayer= window.dataLayer || [];
     window.dataLayer.push({
