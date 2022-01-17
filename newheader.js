@@ -15,7 +15,6 @@ wear.addEventListener("click", pushinfo('generic:event', 'android:header', 'clic
 //TV
 var tv = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[3];
 tv.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'TV'));
-
 //AUTO
 var auto = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[4];
 auto.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'auto'));
@@ -41,6 +40,6 @@ function pushinfo (event){
       'eventAction': event[2],
       'eventLabel':event[3]
     });
-    console.log("push do", event[4], "para o dataLayer");
+    console.log("push do", event[3], "para o dataLayer");
     return dataLayer;
   }
