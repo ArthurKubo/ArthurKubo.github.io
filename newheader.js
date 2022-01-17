@@ -2,7 +2,7 @@
 
 //PHONE
 var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[0];
-phone.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'phones');
+phone.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'phones')});
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
 tablets.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'tablets')});
@@ -27,14 +27,15 @@ search.addEventListener("click", function(){pushinfo('generic:event', 'android:h
 //MORE BUTTON
 var more = document.querySelector("#more-button");
 more.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'more')});
-//FUNÇÃO PUSH
-function pushinfo (event, category, action, label){
-    window.dataLayer= window.dataLayer || [];
-    console.log("passei por aqui")
-    return window.dataLayer.push({
-      'event':event,
-      'eventCategory': category,
-      'eventAction': action,
-      'eventLabel': label
-    });
-  };
+
+
+//FUNÇÃO PUSH*/
+function pushinfo(event, category, action, label){
+  window.dataLayer= window.dataLayer || [];
+  return window.dataLayer.push({
+    'event':event,
+    'eventCategory': category,
+    'eventAction': action,
+    'eventLabel': label
+  })
+}
