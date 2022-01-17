@@ -30,6 +30,7 @@ more.addEventListener("click", function(){pushinfo('generic:event', 'android:hea
 //FUNÇÃO PUSH
 function pushinfo (event, category, action, label){
     window.dataLayer= window.dataLayer || [];
+    console.log("passei por aqui")
     return window.dataLayer.push({
       'event':event,
       'eventCategory': category,
