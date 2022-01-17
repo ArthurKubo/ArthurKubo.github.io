@@ -2,7 +2,7 @@
 
 //PHONE
 var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[0];
-phone.addEventListener('click', push(pushinfo('generic:event', 'android:header', 'click:img', 'phones'))
+phone.addEventListener('click', pushinfo('generic:event', 'android:header', 'click:img', 'phones'))
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
 tablets.addEventListener('click', pushinfo('generic:event', 'android:header', 'click:img', 'tablets'));
@@ -41,5 +41,5 @@ function pushinfo (event, category, action, label){
       'eventLabel':label
     });
     console.log("push do", label, "para o dataLayer");
-    return;
+    return dataLayer;
   }
