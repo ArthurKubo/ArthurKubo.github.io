@@ -5,10 +5,10 @@ var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--tex
 phone.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'phones')});
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
-addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'tablets')});
+tablets.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'tablets')});
 //WEAR
 var wear = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[2];
-addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'wear')});
+wear.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'wear')});
 //TV
 var tv = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[3];
 tv.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'tv')});
