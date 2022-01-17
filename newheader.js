@@ -3,7 +3,7 @@
 //PHONE
 var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[0];
 var event = ['generic:event', 'android:header', 'click:img', 'phones']
-phone.addEventListener("click", pushinfo)
+phone.addEventListener("click", function(){pushinfo});
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
 var event = ['generic:event', 'android:header', 'click:img', 'tablets']
@@ -49,3 +49,5 @@ function pushinfo (event){
       'eventLabel':event[3]
     });
   };
+
+  /*preciso que a função consiga puxar de algo externo, os dados a serem colocados no
