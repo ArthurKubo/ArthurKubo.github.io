@@ -1,8 +1,8 @@
 /*--HEADER--*/
 
 //PHONE
-'generic:event', 'android:header', 'click:img', 'phones'
 var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[0];
+var event = ['generic:event', 'android:header', 'click:img', 'phones']
 phone.addEventListener("click", pushinfo)
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
@@ -33,13 +33,13 @@ var more = document.querySelector("#more-button");
 more.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'more'));
 
 //FUNÇÃO PUSH
-function pushinfo (event, category, action, label){
+function pushinfo (event){
     window.dataLayer= window.dataLayer || [];
     window.dataLayer.push({
-      'event':event,
-      'eventCategory': category,
-      'eventAction': action,
-      'eventLabel':label
+      'event':event[0],
+      'eventCategory': event[1],
+      'eventAction': event[2],
+      'eventLabel':event[3]
     });
     console.log("push do", label, "para o dataLayer");
     return dataLayer;
