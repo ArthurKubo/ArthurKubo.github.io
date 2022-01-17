@@ -34,11 +34,10 @@ more.addEventListener("click", pushinfo('generic:event', 'android:header', 'clic
 //FUNÇÃO PUSH
 function pushinfo (event){
     window.dataLayer= window.dataLayer || [];
-    window.dataLayer.push({
+    return window.dataLayer.push({
       'event':event[0],
       'eventCategory': event[1],
       'eventAction': event[2],
       'eventLabel':event[3]
-    });
-    return console.log("push do", event[3], "para o dataLayer");
+    });;
   }
