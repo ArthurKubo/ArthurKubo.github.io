@@ -6,30 +6,38 @@ var event = ['generic:event', 'android:header', 'click:img', 'phones']
 phone.addEventListener("click", pushinfo)
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
-tablets.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'tablets'));
+var event = ['generic:event', 'android:header', 'click:img', 'tablets']
+tablets.addEventListener("click", pushinfo);
 
 //WEAR
 var wear = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[2];
+var event = ['generic:event', 'android:header', 'click:img', 'wear']
 wear.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'wear'));
 
 //TV
 var tv = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[3];
-tv.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'TV'));
+var event = ['generic:event', 'android:header', 'click:img', 'tv']
+tv.addEventListener("click", pushinfo);
 //AUTO
 var auto = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[4];
-auto.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'auto'));
+var event = ['generic:event', 'android:header', 'click:img', 'auto']
+auto.addEventListener("click", pushinfo);
 //ONE
 var one = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[5];
-one.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'one'));
+var event = ['generic:event', 'android:header', 'click:img', 'one']
+one.addEventListener("click", pushinfo);
 //PLAY
 var play = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[6];
-play.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'play'));
+var event = ['generic:event', 'android:header', 'click:img', 'play']
+play.addEventListener("click", pushinfo);
 //SEARCH ICON
 var search = document.querySelector(".mdl-button.mdl-js-button.mdl-button--icon");
-search.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'search'));
+var event = ['generic:event', 'android:header', 'click:img', 'search']
+search.addEventListener("click", pushinfo);
 //MORE BUTTON
 var more = document.querySelector("#more-button");
-more.addEventListener("click", pushinfo('generic:event', 'android:header', 'click:img', 'more'));
+var event = ['generic:event', 'android:header', 'click:img', 'more']
+more.addEventListener("click", pushinfo);
 
 //FUNÇÃO PUSH
 function pushinfo (event){
