@@ -2,8 +2,7 @@
 
 //PHONE
 var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[0];
-var event = ['generic:event', 'android:header', 'click:img', 'phones']
-phone.addEventListener("click", function(){pushinfo});
+phone.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'phones')});
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
 var event = ['generic:event', 'android:header', 'click:img', 'tablets']
@@ -43,10 +42,10 @@ more.addEventListener("click", pushinfo);
 function pushinfo (event){
     window.dataLayer= window.dataLayer || [];
     return window.dataLayer.push({
-      'event':event[0],
-      'eventCategory': event[1],
-      'eventAction': event[2],
-      'eventLabel':event[3]
+      'event':event,
+      'eventCategory': category,
+      'eventAction': action,
+      'eventLabel': label
     });
   };
 
