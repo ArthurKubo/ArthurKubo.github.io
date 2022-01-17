@@ -41,6 +41,6 @@ function pushinfo (event){
       'eventAction': event[2],
       'eventLabel':event[3]
     });
-    console.log("push do", label, "para o dataLayer");
+    console.log("push do", event[4], "para o dataLayer");
     return dataLayer;
   }
