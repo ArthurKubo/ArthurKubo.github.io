@@ -5,8 +5,7 @@ var phone = document.querySelectorAll(".mdl-navigation__link.mdl-typography--tex
 phone.addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'phones')});
 // TABLETS
 var tablets = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[1];
-var event = ['generic:event', 'android:header', 'click:img', 'tablets']
-tablets.addEventListener("click", pushinfo);
+addEventListener("click", function(){pushinfo('generic:event', 'android:header', 'click:img', 'phones')});
 
 //WEAR
 var wear = document.querySelectorAll(".mdl-navigation__link.mdl-typography--text-uppercase")[2];
@@ -48,5 +47,3 @@ function pushinfo (event){
       'eventLabel': label
     });
   };
-
-  /*preciso que a função consiga puxar de algo externo, os dados a serem colocados no
