@@ -38,7 +38,7 @@ var event = ['generic:event', 'android:header', 'click:img', 'more']
 more.addEventListener("click", pushinfo);
 
 //FUNÇÃO PUSH
-function pushinfo (event){
+function pushinfo (event, category, action, label){
     window.dataLayer= window.dataLayer || [];
     return window.dataLayer.push({
       'event':event,
