@@ -39,5 +39,5 @@ function pushinfo (event){
       'eventCategory': event[1],
       'eventAction': event[2],
       'eventLabel':event[3]
-    });;
-  }
+    });
+  };
